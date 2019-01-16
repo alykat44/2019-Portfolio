@@ -1,3 +1,3 @@
 # 2019-Portfolio
 
-2019 Portolio and Resume.
+2019 Portolio
