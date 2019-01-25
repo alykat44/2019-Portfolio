@@ -7,103 +7,128 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-  body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
-body, html {
-  height: 100%;
-  color: black;
-  line-height: 2.0;
-}
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Lato", sans-serif;
+  }
 
-/* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+  body,
+  html {
+    height: 100%;
+    color: black;
+    line-height: 2.0;
+  }
 
-/* First image (Logo. Full height) */
-.bgimg-1 {
-  background-image: url('https://images6.alphacoders.com/903/thumb-1920-903645.jpg');
-  min-height: 100%; 
-}
+  /* Create a Parallax Effect */
+  .bgimg-1,
+  .bgimg-2,
+  .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
-/* Second image (Portfolio) */
-.bgimg-2 {
-  background-image: url("https://png.pngtree.com/thumb_back/fw800/back_pic/02/50/75/97577e910d17778.jpg");
-  min-height: 400px;
-}
+  /* First image (Logo. Full height) */
+  .bgimg-1 {
+    background-image: url('https://images6.alphacoders.com/903/thumb-1920-903645.jpg');
+    min-height: 100%;
+  }
 
-/* Third image (Contact) */
-.bgimg-3 {
-  background-image: url("https://images2.alphacoders.com/728/thumb-1920-728493.jpg");
-  min-height: 400px;
-}
-
-.w3-wide {letter-spacing: 10px;}
-.w3-hover-opacity {cursor: pointer;}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-
-.flip-card {
-  background-color: transparent;
-  width: 400px;
-  height: 400px;
-  perspective: 1000px;
-}
-
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: justify; 
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  
-}
-
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-}
-
-.flip-card-front {
-  background-color: #bbb;
-  color: black;
-  z-index: 2;
-}
-
-.flip-card-back {
-  background-color: #375d75;
-  color: white;
-  transform: rotateY(180deg);
-  z-index: 1;
-}
- 
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1600px) {
-  .bgimg-1, .bgimg-2, .bgimg-3 {
-    background-attachment: scroll;
+  /* Second image (Portfolio) */
+  .bgimg-2 {
+    background-image: url("https://png.pngtree.com/thumb_back/fw800/back_pic/02/50/75/97577e910d17778.jpg");
     min-height: 400px;
   }
-  .social {
-    image-orientation: initial;
+
+  /* Third image (Contact) */
+  .bgimg-3 {
+    background-image: url("https://images2.alphacoders.com/728/thumb-1920-728493.jpg");
+    min-height: 400px;
   }
 
- 
- 
-}
+  .w3-wide {
+    letter-spacing: 10px;
+  }
 
+  .w3-hover-opacity {
+    cursor: pointer;
+  }
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+
+  .flip-card {
+    background-color: silver;
+    width: 400px;
+    height: 400px;
+    perspective: 1000px;
+    margin-bottom: 20px;
+
+  }
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+
+
+  }
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+
+  }
+
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+    z-index: 2;
+  }
+
+  .flip-card-back {
+    background-color: #375d75;
+    color: white;
+    transform: rotateY(180deg);
+    z-index: 1;
+  }
+
+  /* Turn off parallax scrolling for tablets and phones */
+  @media only screen and (max-device-width: 1600px) {
+
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3 {
+      background-attachment: scroll;
+      min-height: 400px;
+    }
+
+    .social {
+      image-orientation: initial;
+    }
+
+
+
+  }
 </style>
 
 <body>
@@ -207,24 +232,6 @@ body {
     </div>
   </div>
 
-  <div class="w3-row w3-center w3-dark-grey w3-padding-16">
-    <div class="w3-quarter w3-section">
-      <span class="w3-xlarge"></span><br>
-
-    </div>
-    <div class="w3-quarter w3-section">
-      <span class="w3-xlarge"></span><br>
-
-    </div>
-    <div class="w3-quarter w3-section">
-      <span class="w3-xlarge"></span><br>
-
-    </div>
-    <div class="w3-quarter w3-section">
-      <span class="w3-xlarge"></span><br>
-
-    </div>
-  </div>
 
   <!-- Second Parallax Image with Portfolio Text -->
   <div class="bgimg-2 w3-display-container w3-opacity-min">
@@ -251,8 +258,8 @@ body {
             <div class="flip-card-back">
               <h3>FAST-APP</h3>
               <p>Technologies: Html,CSS,Bootstrap,Node.js,Express,MongoDB,
-                 React.js,Nodemailer, Geo-Location,Google-Maps.</p>
-              <p>The FAST application offers a real-time environment that provides 
+                React.js,Nodemailer, Geo-Location,Google-Maps.</p>
+              <p>The FAST application offers a real-time environment that provides
                 vehicle support for towing, tire change,jumpstart,lock-outs or gasoline.</p>
               <a href="https://fredandsons.herokuapp.com/" target="_blank"> Website</a> <br>
               <a href="https://github.com/alykat44/FAST-Project-3">Source</a>
@@ -261,141 +268,138 @@ body {
         </div>
       </div>
 
-  
 
-    <div class="w3-col m6">
-      <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <img class="img-responsive" src="images/Reggie.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-              alt="Reggies-Nest" height="400px" width="600px">
-          </div>
-          <div class="flip-card-back">
-            <h3>Reggies-Nest</h3>
-            <p>Technologies:Html,CSS,Bootstrap,Node.js, 
-               Express,JS,MySQL,MVP,ORM,Handlebars,Sequelize,
-               Google OAuth2.0.
+
+      <div class="w3-col m6">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img class="img-responsive" src="images/Reggie.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                alt="Reggies-Nest" height="400px" width="600px">
+            </div>
+            <div class="flip-card-back">
+              <h3>Reggies-Nest</h3>
+              <p>Technologies:Html,CSS,Bootstrap,Node.js,
+                Express,JS,MySQL,MVP,ORM,Handlebars,Sequelize,
+                Google OAuth2.0.
               </p>
-            <p> Reggies Nest is a Craigslist Clone application that allows 
-                the user to login with Google+ and creates a profile to add, 
+              <p> Reggies Nest is a Craigslist Clone application that allows
+                the user to login with Google+ and creates a profile to add,
                 edit,or upload various photos of items that a user wants to sell or buy.
               </p>
 
-            <a href="https://reginalds-nest.herokuapp.com/" target="_blank"> Website</a> <br>
-            <a href="https://github.com/alykat44/ProjectFun2">Source</a>
+              <a href="https://reginalds-nest.herokuapp.com/" target="_blank"> Website</a> <br>
+              <a href="https://github.com/alykat44/ProjectFun2">Source</a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    
-    <!-- <div class="w3-row-padding w3-center w3-section">  -->
 
-    <div class="w3-col m6">
-      <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <img class="img-responsive" src="images/Lighthouse.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-              alt="KlickGame" height="400px" width="600px">
-          </div>
-          <div class="flip-card-back">
-            <h3>KlickGame</h3>
-            <p>Technologies:Html,CSS,Bootstrap,React.js,Node.js, JavaScript</p>
+      <!-- <div class="w3-row-padding w3-center w3-section">  -->
 
-            <p>When an image is clicked, the images rendered to the page should shuffle themselves in a
-              random order. If an image is chosen twice, the game will reset. If all images are chosen
-              without repitition then your a winner!</p>
+      <div class="w3-col m6">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img class="img-responsive" src="images/Lighthouse.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                alt="KlickGame" height="400px" width="600px">
+            </div>
+            <div class="flip-card-back">
+              <h3>KlickGame</h3>
+              <p>Technologies:Html,CSS,Bootstrap,React.js,Node.js, JavaScript</p>
 
-            <a href="https://lighthouseclickgame.herokuapp.com/" target="_blank"> Website</a> <br>
-            <a href="https://github.com/alykat44/Klickgame">Source</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <br>
+              <p>When an image is clicked, the images rendered to the page should shuffle themselves in a
+                random order. If an image is chosen twice, the game will reset. If all images are chosen
+                without repitition then your a winner!</p>
 
-
-    <div class="w3-col m6">
-      <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <img class="img-responsive" src="images/Daburger.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-              alt="Eat Da Burger" height="400px" width="600px">
-          </div>
-          <div class="flip-card-back">
-            <h3>Eat Da Burger</h3>
-            <p>Technologies:Html,CSS,JavaScript,Node.js,Express,MySQL,Handelbars</p>
-
-            <p>“Eating” a burger is accomplished by clicking the “Devour It!” When a
-              burger has been eaten, it is moved to the “Burgers That Have Been Eaten” list.
-              The user is also able to Add A Burger. The user simply types in a free-form text
-              description in the “Add A Burger” section of the App. The new burger will then
-              appear in the “Burgers Available To Eat” section.The user may then “eat” this new burger.
-            </p>
-
-            <a href="https://obscure-citadel-53587.herokuapp.com/burgers" target="_blank"> Website</a> <br>
-            <a href="https://github.com/alykat44/Burger">Source</a>
+              <a href="https://lighthouseclickgame.herokuapp.com/" target="_blank"> Website</a> <br>
+              <a href="https://github.com/alykat44/Klickgame">Source</a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <br>
+      <br>
 
-    <div class="w3-col m6">
 
-      <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <img class="img-responsive" src="images/NYT.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-              alt="Mongo-Scraper" height="400px" width="600px">
-          </div>
-          <div class="flip-card-back">
-            <h3>Mongo-Scraper</h3>
-            <p>Technologies:Html,CSS,JavaScript,Express,Handelbars
-              Mongoose and Body-Parser</p>
+      <div class="w3-col m6">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img class="img-responsive" src="images/Daburger.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                alt="Eat Da Burger" height="400px" width="600px">
+            </div>
+            <div class="flip-card-back">
+              <h3>Eat Da Burger</h3>
+              <p>Technologies:Html,CSS,JavaScript,Node.js,Express,MySQL,Handelbars</p>
 
-            <p> This is a web app that lets users view and leave comments on the latest news.
-              But you're not going to actually write any articles; instead, you'll flex your
-              Mongoose and Cheerio muscles to scrape news from another site. You can scrape news,
-              save articles and make comments on specific news that interests the user.
-            </p>
+              <p>The user is able to Create a Burger,Add A Burger or Devour a Burger. The user simply types in a
+                free-form text,
+                the new burger will then appear in the “Burgers Available To Eat” section.The user may then “eat” this
+                new burger.
+              </p>
 
-            <a href="https://vast-brook-29511.herokuapp.com/" target="_blank"> Website</a> <br>
-            <a href="https://github.com/alykat44/Mongo-Scraper">Source</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-
-    <div class="w3-col m6">
-      <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <img class="img-responsive" src="images/Bucketlist.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-              alt="Bucket-List" height="400px" width="600px">
-          </div>
-          <div class="flip-card-back">
-            <h3>Bucket-List</h3>
-            <p>Technologies:Html,CSS,Bootstrap,JavaScript,API,Google-Maps,</p>
-
-            <p>Plan your Bucket-List trip! Fill out the form and chose the adventure you want to pursue and with the
-              help of Geo-Maps and Yelp!
-              Data will populate choices and phone numbers to specific businesses to obtain information for your
-              adventure!
-            </p>
-
-            <a href="https://lordtaltosh.github.io/group-project" target="_blank"> Website</a> <br>
-            <a href="https://github.com/alykat44/group-project">Source</a>
+              <a href="https://obscure-citadel-53587.herokuapp.com/burgers" target="_blank"> Website</a> <br>
+              <a href="https://github.com/alykat44/Burger">Source</a>
+            </div>
           </div>
         </div>
       </div>
+      <br>
+
+      <div class="w3-col m6">
+
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img class="img-responsive" src="images/NYT.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                alt="Mongo-Scraper" height="400px" width="600px">
+            </div>
+            <div class="flip-card-back">
+              <h3>Mongo-Scraper</h3>
+              <p>Technologies:Html,CSS,JavaScript,Express,Handelbars
+                Mongoose and Body-Parser</p>
+
+              <p> This is a web app that lets users view and leave comments on the latest news.
+                You can scrape news, save articles and make comments on specific news that interests the user.
+              </p>
+
+              <a href="https://vast-brook-29511.herokuapp.com/" target="_blank"> Website</a> <br>
+              <a href="https://github.com/alykat44/Mongo-Scraper">Source</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="w3-col m6">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img class="img-responsive" src="images/Bucketlist.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                alt="Bucket-List" height="400px" width="600px">
+            </div>
+            <div class="flip-card-back">
+              <h3>Bucket-List</h3>
+              <p>Technologies:Html,CSS,Bootstrap,JavaScript,API,Google-Maps,</p>
+
+              <p>Plan your Bucket-List trip! Fill out the form and chose the adventure you want to pursue and with the
+                help of Geo-Maps and Yelp!
+                Data will populate choices and phone numbers to specific businesses to obtain information for your
+                adventure!
+              </p>
+
+              <a href="https://lordtaltosh.github.io/group-project" target="_blank"> Website</a> <br>
+              <a href="https://github.com/alykat44/group-project">Source</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
     </div>
-
-
-
-
-
-  </div>
 
   </div>
 
@@ -418,25 +422,11 @@ body {
       </div>
       <div class="w3-col m8 w3-panel">
         <div class="w3-large w3-margin-bottom">
-          <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Eudora, Kansas<br>
-          <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email:
-          alykat_7@yahoo.com<br>
-        </div>
+          <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Eudora, Kansas <br>
 
-        <form action="/action_page.php" target="_blank">
-          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-            </div>
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-            </div>
-          </div>
-          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-          <button class="w3-button w3-black w3-right w3-section" type="submit">
-            <i class="fa fa-paper-plane"></i> SEND MESSAGE
-          </button>
-        </form>
+          <a href="https://github.com/alykat44"><i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>
+          Email: alykat_7@yahoo.com</a>
+        </div>
       </div>
     </div>
   </div>
@@ -449,7 +439,7 @@ body {
 
       <a href="https://www.linkedin.com/in/annette-yeager-bovee-aa162b15/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
       <a href="https://twitter.com/alybovee"><i class="fa fa-twitter w3-hover-opacity"></i></a>
-      <a href="https://github.com/alykat44" ><i class="fa fa-github w3-hover-opacity"></i></a>
+      <a href="https://github.com/alykat44"><i class="fa fa-github w3-hover-opacity"></i></a>
 
 
 
